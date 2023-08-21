@@ -19,7 +19,11 @@ import {
   Drawer,
   Dialog,
   Row,
-  Col
+  Col,
+  Popover,
+  DatePicker,
+  TimeSelect,
+  TimePicker
 } from 'element-ui'
 
 Vue.use(Container)
@@ -42,3 +46,7 @@ Vue.use(Drawer)
 Vue.use(Dialog)
 Vue.use(Row)
 Vue.use(Col)
+Vue.use(Popover)
+Vue.use(DatePicker)
+Vue.use(TimeSelect)
+Vue.use(TimePicker)

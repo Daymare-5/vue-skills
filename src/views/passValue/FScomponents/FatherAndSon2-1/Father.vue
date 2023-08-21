@@ -1,18 +1,18 @@
 <template>
   <div class="father">
     <span class="title">父组件</span>
-    <el-input v-model="count" size="large"></el-input>
-    <Son :num="count"></Son>
+    <el-input v-model="text"></el-input>
+    <Son v-model="text"></Son>
   </div>
 </template>
 
 <script>
 import Son from './Son'
 export default {
-  name: 'FatherComponent1',
+  name: 'FatherComponent2-1',
   data () {
     return {
-      count: '100'
+      text: '123'
     }
   },
   components: {
@@ -34,7 +34,7 @@ export default {
 .title {
   position: absolute;
 }
-.el-input {
+.father .el-input {
   width: 20%;
   position: absolute;
   top: 15%;

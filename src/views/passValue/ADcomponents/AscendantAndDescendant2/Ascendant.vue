@@ -1,28 +1,33 @@
 <template>
-  <div class="father">
-    <span class="title">父组件</span>
-    <el-input v-model="count" size="large"></el-input>
-    <Son :num="count"></Son>
+  <div class="ascendant">
+    <span class="title">祖组件</span>
+    <el-input v-model="text"></el-input>
+    <Middle></Middle>
   </div>
 </template>
 
 <script>
-import Son from './Son'
+import Middle from './Middle'
 export default {
-  name: 'FatherComponent2',
-  data () {
+  name: 'AscendantComponent2',
+  components: {
+    Middle
+  },
+  provide () {
     return {
-      count: '100'
+      text: this.text
     }
   },
-  components: {
-    Son
+  data () {
+    return {
+      text: '123'
+    }
   }
 }
 </script>
 
 <style scoped>
-.father {
+.ascendant {
   width: 86%;
   height: 380px;
   margin: 0 auto;
@@ -34,7 +39,7 @@ export default {
 .title {
   position: absolute;
 }
-.father .el-input {
+.el-input {
   width: 20%;
   position: absolute;
   top: 15%;

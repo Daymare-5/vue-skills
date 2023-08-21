@@ -19,7 +19,8 @@
               <i class="el-icon-sort"></i><span>组件传值</span>
             </template>
             <el-menu-item index="fsPassValue">父子组件</el-menu-item>
-            <el-menu-item index="1-4">非父子组件</el-menu-item>
+            <el-menu-item index="adPassValue">祖孙组件</el-menu-item>
+            <el-menu-item index="nfsPassValue">非父子组件</el-menu-item>
           </el-submenu>
           <el-submenu index="表格应用">
             <template slot="title">
@@ -27,6 +28,18 @@
             </template>
             <el-menu-item index="mutipleColumnSort">多列排序</el-menu-item>
           </el-submenu>
+          <el-menu-item index="lazyLoad">
+            <i class="el-icon-smoking"></i>
+            <span slot="title">图片懒加载</span>
+          </el-menu-item>
+          <el-menu-item index="datePicker">
+            <i class="el-icon-date"></i>
+            <span slot="title">日期选择器应用</span>
+          </el-menu-item>
+          <el-menu-item index="other">
+            <i class="el-icon-s-order"></i>
+            <span slot="title">其它</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <!-- 路由 -->

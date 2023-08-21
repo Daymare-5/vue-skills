@@ -1,20 +1,19 @@
 <template>
   <div class="son">
     <p>子组件</p>
-    <p v-html="context"></p>
-    <el-input v-model="context"></el-input>
+    <el-input :value="context" @input="changeContext"></el-input>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SonComponent2',
+  name: 'SonComponent2-2',
   props: {
-    num: String
+    context: String
   },
-  data () {
-    return {
-      context: '<input :value="num"/>'
+  methods: {
+    changeContext (e) {
+      this.$emit('update:context', e)
     }
   }
 }
@@ -33,10 +32,10 @@ export default {
   right: 1px;
 }
 .son .el-input {
-  width: 70%;
+  width: 30%;
   height: 30px;
   position: absolute;
-  left: 15%;
-  bottom: 20%;
+  left: 35%;
+  top: 20%;
 }
 </style>

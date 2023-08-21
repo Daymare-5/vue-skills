@@ -5,6 +5,9 @@ import store from './store'
 import '@/utils/element-ui'
 import '@/utils/highlight'
 
+import ShowCard from '@/components/ShowCard'
+Vue.component('ShowCard', ShowCard)
+
 Vue.config.productionTip = false
 
 new Vue({

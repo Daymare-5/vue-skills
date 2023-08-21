@@ -1,0 +1,40 @@
+<template>
+  <div class="son">
+    <p>子组件</p>
+    <el-input v-model="obj.text"></el-input>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'SonComponent4-1',
+  data () {
+    return {
+      obj: {
+        text: '123'
+      }
+    }
+  }
+}
+</script>
+
+<style lang="less" scoped>
+.son {
+  width: 66%;
+  height: 340px;
+  float: right;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+  right: 1px;
+}
+.son .el-input {
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+</style>

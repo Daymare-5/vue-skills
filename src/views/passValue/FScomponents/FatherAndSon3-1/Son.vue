@@ -1,20 +1,22 @@
 <template>
   <div class="son">
     <p>子组件</p>
-    <p>{{ num }}</p>
+    <el-input v-model="text"></el-input>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SonComponent1',
-  props: {
-    num: String
+  name: 'SonComponent3-1',
+  data () {
+    return {
+      text: '123'
+    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .son {
   width: 66%;
   height: 340px;
@@ -25,5 +27,12 @@ export default {
   border-radius: 10px;
   position: relative;
   right: 1px;
+}
+.son .el-input {
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 35%;
+  top: 20%;
 }
 </style>
