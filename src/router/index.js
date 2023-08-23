@@ -3,14 +3,15 @@ import VueRouter from 'vue-router'
 
 import NotFound from '@/views/NotFound'
 import MyCarousel from '@/views/carousel/MyCarousel'
-import ElementCarousel from '@/views/carousel/ElementCarousel'
-import MutipleColumnSort from '@/views/table/MutipleColumnSort'
-import FSPassValue from '@/views/passValue/FSPassValue'
-import ADPassValue from '@/views/passValue/ADPassValue'
-import NFSPassValue from '@/views/passValue/NFSPassValue'
-import LazyLoad from '@/views/lazyLoad'
-import DatePicker from '@/views/datePicker'
-import Other from '@/views/other'
+
+const ElementCarousel = () => import('@/views/carousel/ElementCarousel')
+const MutipleColumnSort = () => import('@/views/table/MutipleColumnSort')
+const FSPassValue = () => import('@/views/passValue/FSPassValue')
+const ADPassValue = () => import('@/views/passValue/ADPassValue')
+const NFSPassValue = () => import('@/views/passValue/NFSPassValue')
+const LazyLoad = () => import('@/views/lazyLoad')
+const DatePicker = () => import('@/views/datePicker')
+const Other = () => import('@/views/other')
 
 Vue.use(VueRouter)
 
