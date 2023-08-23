@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue_skills"]=self["webpackChunkvue_skills"]||[]).push([[692],{8692:function(n,e,u){u.r(e),u.d(e,{default:function(){return f}});var l=function(){var n=this;n._self._c;return n._m(0)},s=[function(){var n=this,e=n._self._c;return e("div",[e("h2",[n._v("开发中....")])])}],t={name:"OtherIndex"},r=t,i=u(1001),c=(0,i.Z)(r,l,s,!1,null,null,null),f=c.exports}}]);
+//# sourceMappingURL=692.22a21bfb.js.map
