@@ -1,19 +1,17 @@
 <template>
-  <el-row>
-    <el-col :span="14">
-      <label style="margin-right: 20px">日期</label>
-      <el-date-picker
-        clearable
-        type="daterange"
-        value-format="yyyy-MM-dd HH:mm:ss"
-        :default-time="['00:00:00', '23:59:59']"
-        start-placeholder="开始日期"
-        end-placeholder="结束日期"
-        v-model="date"
-        :picker-options="pickerOptions">
-      </el-date-picker>
-    </el-col>
-  </el-row>
+  <div>
+    <label style="margin-right: 20px">日期</label>
+    <el-date-picker
+      clearable
+      type="daterange"
+      value-format="yyyy-MM-dd HH:mm:ss"
+      :default-time="['00:00:00', '23:59:59']"
+      start-placeholder="开始日期"
+      end-placeholder="结束日期"
+      v-model="date"
+      :picker-options="pickerOptions">
+    </el-date-picker>
+  </div>
 </template>
 
 <script>

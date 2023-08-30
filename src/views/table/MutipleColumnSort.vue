@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h2>基于elementUI的多列排序</h2>
+    <h4>仅排序当前页数据，排序字段根据选择顺序赋予优先级</h4>
     <el-table
       :data="tempData"
       style="width: 100%"

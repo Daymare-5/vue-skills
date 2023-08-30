@@ -11,7 +11,7 @@ const ADPassValue = () => import('@/views/passValue/ADPassValue')
 const NFSPassValue = () => import('@/views/passValue/NFSPassValue')
 const LazyLoad = () => import('@/views/lazyLoad')
 const DatePicker = () => import('@/views/datePicker')
-const Other = () => import('@/views/other')
+const MagicCube = () => import('@/views/other/magicCube')
 
 Vue.use(VueRouter)
 
@@ -25,7 +25,7 @@ const routes = [
   { path: '/nfsPassValue', component: NFSPassValue },
   { path: '/lazyLoad', component: LazyLoad },
   { path: '/datePicker', component: DatePicker },
-  { path: '/other', component: Other },
+  { path: '/magicCube', component: MagicCube },
   { path: '*', component: NotFound }
 ]
 

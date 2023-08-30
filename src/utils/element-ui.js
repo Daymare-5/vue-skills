@@ -23,7 +23,9 @@ import {
   Popover,
   DatePicker,
   TimeSelect,
-  TimePicker
+  TimePicker,
+  RadioGroup,
+  RadioButton
 } from 'element-ui'
 
 Vue.use(Container)
@@ -50,3 +52,5 @@ Vue.use(Popover)
 Vue.use(DatePicker)
 Vue.use(TimeSelect)
 Vue.use(TimePicker)
+Vue.use(RadioGroup)
+Vue.use(RadioButton)
