@@ -167,19 +167,7 @@ export default {
         const index = JSON.parse(item.dataset.index)
         const locationId = this.leftArray.findIndex(_item => _item === index.location)
         if (locationId !== -1) {
-          if (targetIndex < 0) {
-            // 如果location更新前是背面, 更新index
-            if (index.location === 'back') {
-              index.index = index.index - 6
-            }
-            index.location = clockwise ? this.leftArray[locationId === 3 ? 0 : locationId + 1] : this.leftArray[locationId === 0 ? 3 : locationId - 1]
-            // 如果location更新后是背面, 更新index
-            if (index.location === 'back') {
-              index.index = index.index + 6
-            }
-          } else {
-            this.rotateFour(index, 'left', clockwise, locationId)
-          }
+          this.rotateFour(index, 'left', clockwise, locationId)
         } else {
           if (targetIndex < 0) {
             this.rotateSelf(index, clockwise)
