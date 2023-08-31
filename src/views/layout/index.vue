@@ -5,9 +5,9 @@
     </el-header>
     <el-container>
       <!-- 导航 -->
-      <el-aside :width="devicePixelRatio === '2' ? PESideWidth : PCSideWidth">
+      <el-aside width="17%">
         <el-menu router unique-opened :default-active="$route.path.substring(1)" :collapse="devicePixelRatio === '2' ? true : false">
-          <el-submenu v-if="devicePixelRatio !== '2' ? true : false" index="轮播图">
+          <el-submenu index="轮播图">
             <template slot="title">
               <i class="el-icon-film"></i><span>轮播图</span>
             </template>
@@ -60,8 +60,6 @@ export default {
   data () {
     return {
       devicePixelRatio: '',
-      PCSideWidth: '16%',
-      PESideWidth: '18%',
       PCWidth: '1200px',
       PEWidth: '95%'
     }
